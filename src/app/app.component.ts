@@ -20,7 +20,8 @@ export class AppComponent {
   }
 
   onDistanceChange(value: string) {
-    this.distance = parseFloat((value).toFixed(2));
+    let number:number = parseFloat(value);
+    this.distance = parseFloat(number.toFixed(2));
   }
 
   onNameChange(value:string) {
